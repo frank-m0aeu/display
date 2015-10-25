@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Principia ISS HamTV Reception</title>
+<link href="iss-styles.css" rel="stylesheet" type="text/css" />
+<SCRIPT LANGUAGE="JavaScript">
+function showDate()
+{
+	var now = new Date();
+	var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+	var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+	var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+	function fourdigits(number)
+	{
+		return (number < 1000) ? number + 1900 : number;
+	}
+	
+	tnow=new Date();
+	thour=now.getHours();
+	tmin=now.getMinutes();
+	tsec=now.getSeconds();
+	
+	if (tmin<=9) { tmin="0"+tmin; }
+	if (tsec<=9) { tsec="0"+tsec; }
+	if (thour<10) { thour="0"+thour; }
+	
+	today = days[now.getDay()] + ", " + date + " " + months[now.getMonth()] + ", " + (fourdigits(now.getYear())) + " - " + thour + ":" + tmin +":"+ tsec;
+	document.getElementById("dateDiv").innerHTML = today;
+}
+setInterval("showDate()", 1000);
+</script>
+
+</head>
+
+<body>
+<div class="wrapper">
+<div class="isstracker"><iframe src="http://www.esa.int/Our_Activities/Human_Spaceflight/International_Space_Station/Where_is_the_International_Space_Station" id="isstracker"></iframe></div>
+<div class="inputbar">
+<div class="monitor1"><iframe src="http://www.vivadatv.org/tutioune.php?om_id=GB3HV&station_id=1" id="localreceivemonitor"></iframe></div>
+<div class="monitor2"><iframe src="http://www.vivadatv.org/tutioune.php?om_id=G8GTZ&station_id=3" id="goonhillyreceivemonitor"></iframe></div>
+</div>
+<div id="locationdata" style="text-align:center">
+<!--<div id="localtime"><strong></strong> </div>-->
+<table  border="0" cellpadding="0" style="text-align:center"> 
+<tr>
+    <th scope="row">Local Time: </th><td colspan="3"><span id="dateDiv"></span></td>
+  </tr>
+  <tr>
+    <th scope="row">AOS: </th><td >00:00:00</td><th scope="row">Range: </th><td>00,000.0 km</td>
+  </tr>
+  <tr>
+    <th scope="row">Elevation: </th><td>-00.0°</td><th scope="row">Altitude: </th><td>000.0 km</td>
+  </tr>
+</table>
+</div>
+<div class="webcamlocal"><iframe src="http://www.sat.dundee.ac.uk/webcam.html" id="localreceivewebcam" ></iframe></div> <div class="locallabel">Local Receiver</div>
+<div class="webcamremote"><iframe src="http://www.sat.dundee.ac.uk/webcam.html" id="remotereceivewebcam" ></iframe></div><div class="remotelabel">Goonhilly Receiver</div>
+
+
+
+
+</div>
+</body>
+</html>
