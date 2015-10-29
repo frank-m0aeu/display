@@ -1,0 +1,228 @@
+.wrapper {
+	margin: 0px;
+	padding: 0px;
+	height: 960px;
+	width: 1280px;
+	border: thin solid #999;
+	background-image: url(Tracking-Screen-for-schoolsV2.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	position: absolute;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+}
+.inputbar {
+	background-color: #a7caf0;
+    float: left;
+    height: 125px;
+    left: 0;
+    position: absolute;
+    top: 652px;
+    width: 100%;
+	}
+#isstracker {
+	-moz-transform: scale(2.09, 2);
+	-webkit-transform: scale(2.09, 2);
+	-o-transform: scale(2.09, 2);
+	-ms-transform: scale(2.09, 2);
+	transform: scale(2.09, 2);
+	-moz-transform-origin: top left;
+	-webkit-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	transform-origin: top left;
+    height: 1220px;
+    left: -515px;
+    position: relative;
+    top: 0px;
+    width: 1100px;
+}	
+.isstracker {
+    background-color: #fff;
+    height: 583px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 1280px;
+	overflow:hidden;
+	border-bottom: 3px solid #246993;
+}
+
+#locationdata  {
+ background-color: #fff;
+    border-radius: 20px;
+    whitespace: nowrap;
+    float: left;
+    font-family: "Arial",sans-serif;
+    font-size: 1em;
+    
+    height: 75px;
+    left: 413px;
+    padding: 7px 40px;
+    position: absolute;
+    top: 540px;
+ /*   width: 565px;*/
+    border: 3px solid #246993;
+	color: #246993 ;
+	text-align:center;
+}
+
+#locationdata th {
+font-weight: bold;	
+text-align: right;
+}
+
+#locationdata td {
+margin-right:30px;
+}
+
+
+
+#localreceivemonitor {
+	-moz-transform: scale(0.72, 0.72);
+	-webkit-transform: scale(0.72, 0.72);
+	-o-transform: scale(0.72, 0.72);
+	-ms-transform: scale(0.72, 0.72);
+	transform: scale(0.72, 0.72);
+	-moz-transform-origin: top left;
+	-webkit-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	transform-origin: top left;
+	height: 1200px;
+    left: -68px;
+    position: relative;
+    top: -320px;
+    width: 1100px;
+}
+#goonhillyreceivemonitor {
+	-moz-transform: scale(0.72, 0.72);
+	-webkit-transform: scale(0.72, 0.72);
+	-o-transform: scale(0.72, 0.72);
+	-ms-transform: scale(0.72, 0.72);
+	transform: scale(0.72, 0.72);
+	-moz-transform-origin: top left;
+	-webkit-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	transform-origin: top left;
+	height: 1200px;
+    left: -68px;
+    position: relative;
+    top: -320px;
+    width: 1100px;
+}
+#localreceivewebcam {
+	-moz-transform: scale(0.72, 0.72);
+	-webkit-transform: scale(0.72, 0.72);
+	-o-transform: scale(0.72, 0.72);
+	-ms-transform: scale(0.72, 0.72);
+	transform: scale(0.72, 0.72);
+	-moz-transform-origin: top left;
+	-webkit-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	transform-origin: top left;
+	height: 1200px;
+    left: -58px;
+    position: relative;
+    top: -182px;
+    width: 1100px;
+}
+#remotereceivewebcam {
+	-moz-transform: scale(0.72, 0.72);
+	-webkit-transform: scale(0.72, 0.72);
+	-o-transform: scale(0.72, 0.72);
+	-ms-transform: scale(0.72, 0.72);
+	transform: scale(0.72, 0.72);
+	-moz-transform-origin: top left;
+	-webkit-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	transform-origin: top left;
+	height: 1200px;
+    left: -500px;
+    position: relative;
+    top: -182px;
+    width: 1100px;
+}
+
+
+
+.monitor2  {
+    background-color: #a7caf0;
+    height: 135px;
+  
+    overflow: hidden;
+    position: relative;
+    width: 640px;
+	float:left;
+	
+}
+.monitor1  {
+   background-color: #a7caf0;
+    border-right: 1px solid #246993;
+    float: left;
+    height: 135px;
+    left: 0;
+    overflow: hidden;
+    position: relative;
+    width: 639px;
+	
+}
+.webcamlocal {
+    background-color: #fff;
+    border: 3px solid #246993;
+    height: 160px;
+    left: 15px;
+    position: absolute;
+    top: 480px;
+    width: 215px;
+	overflow:hidden;
+}
+.webcamremote {
+    background-color: #fff;
+    border: 3px solid #246993;
+    height: 160px;
+    left: 1045px;
+    position: absolute;
+    top: 480px;
+    width: 215px;
+	overflow:hidden;
+}
+
+.locallabel {
+    background-color: #246993;
+    border-radius: 20px;
+    color: #fff;
+    float: left;
+    font-family: "Arial Black",sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    left: 150px;
+    padding: 7px 15px;
+    position: absolute;
+    top: 625px;
+}
+.remotelabel {
+    background-color: #246993;
+    border-radius: 20px;
+    color: #fff;
+    float: right;
+    font-family: "Arial Black",sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    right: 150px;
+    padding: 7px 15px;
+    position: absolute;
+    top: 625px;
+}
+#localtime  {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	
+}
+
+
